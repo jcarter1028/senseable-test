@@ -10,6 +10,10 @@ body {
     width: 1080px;
 }
 
+.hidden {
+    display: none;
+}
+
 @media only screen and (max-width: 1170px) and (min-width: 940px) {
     .flexwidth-container {
       width: 940px;
@@ -36,6 +40,22 @@ body {
   }
 
   /* MENU */
+
+@media only screen and (min-width: 631px) {
+    .navbar-click-menu {
+      display: none;
+    }
+    .navbar-wordmenu {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+
+    .navbar-word-menu {
+        display: none;
+    }
+}
 
 .menu-container {
     height: 100px;
@@ -95,6 +115,50 @@ body {
 }
 
 .navbar-menu  > li > div > a:focus, .navbar-menu  > li > div > a:hover
+{
+	color: #40716e
+}
+
+.navbar-click-menu-button {
+    background-color: #fff;
+    border: none;
+    color: #559793;
+    cursor: pointer;
+    font-size: 35px;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.menu-click-submenu {
+    background-color: #fff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
+    width: 150px;
+    z-index: 99;
+}
+
+.menu-click-submenu > li {
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    padding: 0.5em;
+    position: relative;
+    z-index: 100;
+}
+
+.menu-click-submenu > li:last-child {
+    border-bottom: none;
+}
+
+
+.menu-click-submenu > li > div > a {
+    color: #559793;
+    text-decoration: none;
+}
+
+.menu-click-submenu  > li > div > a:focus, .menu-click-submenu  > li > div > a:hover
 {
 	color: #40716e
 }
