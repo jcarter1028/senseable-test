@@ -13,6 +13,9 @@ body {
 .hidden {
     display: none;
 }
+.centred-text {
+    text-align: center;
+}
 
 @media only screen and (max-width: 1170px) and (min-width: 940px) {
     .flexwidth-container {
@@ -170,8 +173,12 @@ body {
 }
 
 .index-top-image {
-    height: calc(100vh - 100px);
+    max-height: 100vh;
+    min-height: calc(100vh - 100px);
+    object-fit: cover;
+    width: 100%;
 }
+
 
 .index-text-in-top-image {
     color: #efefef;
@@ -194,11 +201,14 @@ body {
     font-size: 42px;
     font-weight: bold;
     line-height: 1.2em;
+    padding: 1em;
+    text-align: center;
 }
 
 .index-top-text-more {
     font-size: 20px;
-    padding: 0 1em 0 0;
+    padding: 1em;
+    text-align: right;
 }
 
 .quote {
